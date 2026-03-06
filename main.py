@@ -1,3 +1,5 @@
+frutas = []
+
 def mostrar_menu():
     mostrar_separador()
     menu = """Bienvenido
@@ -12,7 +14,9 @@ def mostrar_separador():
     print("*"*15)
 
 def agregar_fruta():
-    pass
+    mostrar_separador()
+    fruta = input("Ingrese el nombre de la fruta: ")
+    frutas.append(fruta)
 
 def ver_frutas():
     pass
@@ -29,7 +33,7 @@ while True:
         print("Hubo un error con su opción ingresada")
         opc = 3
     if opc == 1:
-        print("opcion 1")
+        agregar_fruta()
     elif opc == 2:
         print("opcion 2")
     elif opc == 3:
