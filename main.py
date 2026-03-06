@@ -19,7 +19,9 @@ def agregar_fruta():
     frutas.append(fruta)
 
 def ver_frutas():
-    pass
+    mostrar_separador()
+    for i in range(len(frutas)):
+        print(i+1, "-", frutas[i])
 
 def pedir_opcion():
     opcion = int(input("Ingrese la opcion deseada: "))
@@ -35,7 +37,7 @@ while True:
     if opc == 1:
         agregar_fruta()
     elif opc == 2:
-        print("opcion 2")
+        ver_frutas()
     elif opc == 3:
         print("Bye bye :)")
         break
