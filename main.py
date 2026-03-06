@@ -35,7 +35,7 @@ while True:
     try:
         opc = pedir_opcion()
     except Exception:
-        print("Hubo un error con su opción ingresada")
+        print("Hubo un error con su opción ingresada, lea bien")
         opc = 3
     if opc == 1:
         agregar_fruta()
