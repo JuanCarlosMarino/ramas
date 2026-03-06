@@ -1,5 +1,7 @@
+# Inicialización de variables
 frutas = []
 
+# Funciones
 def mostrar_menu():
     mostrar_separador()
     menu = """Bienvenido
@@ -27,6 +29,7 @@ def pedir_opcion():
     opcion = int(input("Ingrese la opcion deseada: "))
     return opcion
 
+# Lógica del menú
 while True:
     mostrar_menu()
     try:
